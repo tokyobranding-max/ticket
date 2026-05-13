@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TapTicket | スマホで作って、スマホで売れるイベントチケット</title>
+    <meta name="description" content="イベントページ作成、チケット販売、PayPay払い、QR受付までスマートフォンで完結するイベントチケット販売サービス。">
+    <link rel="stylesheet" href="event-lp.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="TapTicketトップへ">
+        <span class="brand-mark">T</span>
+        <span>TapTicket</span>
+      </a>
+      <nav class="header-nav" aria-label="主要ナビゲーション">
+        <a href="#flow">使い方</a>
+        <a href="#payments">電子決済</a>
+        <a href="#pricing">料金</a>
+      </nav>
+      <a class="header-cta" href="#start">無料で作成</a>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Mobile first ticketing</p>
+          <h1>チケット販売、スマホでぜんぶ。</h1>
+          <p class="lead">イベントページ作成、PayPay払い、電子チケット、QR受付まで。Z世代が買いやすい導線を、主催者もスマホで作れます。</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#start">無料でイベントを作成</a>
+            <a class="secondary-button" href="#demo">デモを見る</a>
+          </div>
+          <div class="payment-badges" aria-label="対応決済">
+            <span>PayPay</span>
+            <span>Card</span>
+            <span>Convenience store</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="demo" aria-label="電子チケットデモ">
+          <div class="phone phone-main">
+            <div class="phone-status"><span>9:41</span><span>5G</span></div>
+            <article class="ticket-screen">
+              <div class="ticket-nav">
+                <button type="button" aria-label="戻る">‹</button>
+                <button type="button" aria-label="メニュー">•••</button>
+              </div>
+              <div class="ticket-heading">
+                <h2>My Ticket</h2>
+                <p>販売期限 5/27</p>
+              </div>
+              <section class="ticket-paper" aria-label="電子チケット">
+                <div class="ticket-visual">
+                  <strong>CBO</strong>
+                  <span>Branding Course</span>
+                  <div class="light-arc arc-one"></div>
+                  <div class="light-arc arc-two"></div>
+                  <div class="stage-person"></div>
+                </div>
+                <div class="ticket-info">
+                  <p>Branding / Management</p>
+                  <h3>【日本初】CBO育成コース（第17期）</h3>
+                  <div class="ticket-grid">
+                    <div><span>Venue</span><strong>オンライン/都内</strong></div>
+                    <div><span>Ticket</span><strong>一般CBO</strong></div>
+                    <div><span>Pay</span><strong id="heroPayLabel">PayPay</strong></div>
+                  </div>
+                  <div class="ticket-grid">
+                    <div><span>Price</span><strong>30,000円</strong></div>
+                    <div><span>Date</span><strong>6/20・6/27</strong></div>
+                    <div><span>Term</span><strong>17期</strong></div>
+                  </div>
+                </div>
+                <div class="ticket-divider"></div>
+                <div class="barcode-area">
+                  <div class="barcode" aria-hidden="true"></div>
+                  <p>X06138420082680826</p>
+                </div>
+              </section>
+              <button class="phone-button" id="heroPayButton" type="button">PayPayで申し込む</button>
+            </article>
+          </div>
+          <div class="floating-card pay-card">
+            <span class="pay-icon">P</span>
+            <div>
+              <strong>PayPay払い ON</strong>
+              <p>いつものスマホ決済で申し込み</p>
+            </div>
+          </div>
+          <div class="floating-card qr-card">
+            <span class="check-icon">✓</span>
+            <div>
+              <strong>QR受付完了</strong>
+              <p>当日はスマホを見せるだけ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-section" aria-label="イベント運営の課題">
+        <div class="section-head">
+          <p class="eyebrow">Why it matters</p>
+          <h2>買いにくいイベントは、そこで離脱する。</h2>
+        </div>
+        <div class="problem-grid">
+          <article><span>01</span><h3>決済が少ない</h3><p>カードだけだと、スマホ決済に慣れた参加者が申し込みづらい。</p></article>
+          <article><span>02</span><h3>ページが重い</h3><p>入力項目が多いと、主催者も参加者も途中で止まってしまう。</p></article>
+          <article><span>03</span><h3>受付が散らかる</h3><p>名簿、決済、QR受付が別々だと当日の確認に時間がかかる。</p></article>
+        </div>
+      </section>
+
+      <section id="flow" class="flow-section">
+        <div class="section-head compact">
+          <p class="eyebrow">3 steps</p>
+          <h2>作る、売る、入れる。</h2>
+          <p>主催者の設定から参加者の入場まで、スマホ画面の流れで完結します。</p>
+        </div>
+        <div class="flow-grid">
+          <article class="flow-card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="スマートフォンでイベントを準備する人たち"><div><span>Step 1</span><h3>イベント作成</h3><p>タイトル、日時、会場、チケットを入力。途中保存でスマホからでも迷いません。</p></div></article>
+          <article class="flow-card"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="スマートフォン決済の画面"><div><span>Step 2</span><h3>PayPayを有効化</h3><p>支払い方法を選ぶだけ。PayPay、カード、コンビニ払いをイベントごとに設定できます。</p></div></article>
+          <article class="flow-card"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="イベント会場でスマートフォンを見せる参加者"><div><span>Step 3</span><h3>QRで入場</h3><p>参加者は電子チケットを提示。主催者はスマホでチェックインできます。</p></div></article>
+        </div>
+      </section>
+
+      <section id="payments" class="payments-section">
+        <div class="payment-copy">
+          <p class="eyebrow">Payment native</p>
+          <h2>PayPayで、そのまま申し込み。</h2>
+          <p>参加者が普段使っている支払い方法に合わせることで、購入までの迷いを減らします。主催者はオンにするだけで、チケット画面に決済方法が反映されます。</p>
+          <div class="pay-toggle" aria-label="支払い方法デモ">
+            <button class="is-active" type="button" data-payment="PayPay">PayPay</button>
+            <button type="button" data-payment="Card">Card</button>
+            <button type="button" data-payment="コンビニ">コンビニ</button>
+          </div>
+        </div>
+        <div class="payment-panel">
+          <div class="pay-row is-selected"><span class="paypay-mark">P</span><div><strong>PayPay払い</strong><p>アプリ起動またはQR決済</p></div><b>ON</b></div>
+          <div class="pay-row"><span class="card-mark">□</span><div><strong>カード払い</strong><p>Visa / Mastercard / JCB</p></div><b>ON</b></div>
+          <div class="pay-row"><span class="store-mark">¥</span><div><strong>コンビニ払い</strong><p>支払い番号を自動発行</p></div><b>OFF</b></div>
+        </div>
+      </section>
+
+      <section class="usecase-section">
+        <div class="section-head compact"><p class="eyebrow">For gen Z events</p><h2>シェアされるイベントに。</h2></div>
+        <div class="usecase-grid">
+          <article><span>Live</span><h3>ライブ・DJイベント</h3><p>SNS告知からチケット購入まで一直線。</p></article>
+          <article><span>Campus</span><h3>学生コミュニティ</h3><p>カードを持たない参加者にも届けやすい。</p></article>
+          <article><span>Pop-up</span><h3>ポップアップ</h3><p>短期イベントもスマホだけで受付。</p></article>
+          <article><span>Workshop</span><h3>講座・ワークショップ</h3><p>有料チケットと参加者管理をまとめて。</p></article>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing-section">
+        <div class="section-head compact"><p class="eyebrow">Pricing</p><h2>小さく始めて、有料イベントで伸ばす。</h2></div>
+        <div class="pricing-grid">
+          <article class="price-card"><h3>Free</h3><p>無料イベント</p><strong>0円</strong><ul><li>イベントページ作成</li><li>電子チケット</li><li>QR受付</li></ul></article>
+          <article class="price-card featured"><h3>Ticket</h3><p>有料イベント</p><strong>販売時のみ</strong><ul><li>PayPay払い</li><li>カード払い</li><li>売上管理</li></ul></article>
+          <article class="price-card"><h3>Team</h3><p>法人・団体</p><strong>相談</strong><ul><li>複数管理者</li><li>ブランドページ</li><li>独自ドメイン</li></ul></article>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="section-head compact"><p class="eyebrow">FAQ</p><h2>よくある質問</h2></div>
+        <div class="faq-list">
+          <details open><summary>スマホだけでイベントを作れますか？</summary><p>はい。イベント作成、チケット設定、決済設定、受付確認までスマホで操作できる設計です。</p></details>
+          <details><summary>PayPay払いは使えますか？</summary><p>主催者がイベントごとにPayPay払いを有効化できます。参加者の購入画面にも支払い方法として表示されます。</p></details>
+          <details><summary>当日の受付はできますか？</summary><p>電子チケットのQRコードをスマホで読み取り、参加者をチェックインできます。</p></details>
+        </div>
+      </section>
+
+      <section id="start" class="final-cta">
+        <p class="eyebrow">Start now</p>
+        <h2>次のイベント、スマホで売ろう。</h2>
+        <a class="primary-button" href="event-prototype.html">プロトタイプを見る</a>
+      </section>
+    </main>
+
+    <script src="event-lp.js"></script>
+  </body>
+</html>
