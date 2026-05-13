@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>イベントページ作成プロトタイプ</title>
+    <link rel="stylesheet" href="event-prototype.css">
+  </head>
+  <body>
+    <main class="prototype-shell">
+      <section class="workspace">
+        <div class="intro">
+          <p class="eyebrow">Event Page Builder</p>
+          <h1>CBO育成コースの申込ページ</h1>
+          <p class="lead">Peatix掲載イベントの内容をもとに、2日間コースのチケット販売、PayPay払い、スマホチケット表示までを確認できるプロトタイプです。</p>
+        </div>
+
+        <div class="builder-panel" aria-label="イベント作成フォーム">
+          <div class="panel-top"><div><p class="section-label">作成ステップ</p><h2>イベント設定</h2></div><span class="save-state">自動保存済み</span></div>
+          <div class="stepper" aria-label="作成手順"><button class="step is-active" type="button">基本</button><button class="step" type="button">チケット</button><button class="step" type="button">決済</button><button class="step" type="button">公開</button></div>
+          <label class="field"><span>イベント名</span><input id="eventTitle" value="【日本初】CBO育成コース（第17期）"></label>
+          <div class="field-grid"><label class="field"><span>開催日</span><input id="eventDate" value="6/20・6/27"></label><label class="field"><span>開始時間</span><input id="eventTime" value="全9H"></label></div>
+          <label class="field"><span>会場</span><input id="eventPlace" value="オンライン/都内"></label>
+          <label class="field"><span>チケット名</span><input id="ticketName" value="一般CBO"></label>
+          <div class="field-grid"><label class="field"><span>価格</span><input id="ticketPrice" value="30,000円"></label><label class="field"><span>販売期限</span><input id="ticketStock" value="販売期限 5/27"></label></div>
+          <section class="payment-card" aria-label="支払い方法設定">
+            <div><p class="section-label">支払い方法</p><h3>参加者に表示する決済</h3></div>
+            <label class="toggle-row"><span><strong>PayPay払い</strong><small>アプリ起動またはQR決済で支払い</small></span><input id="paypayToggle" type="checkbox" checked></label>
+            <label class="toggle-row"><span><strong>カード払い</strong><small>Visa / Mastercard / JCB</small></span><input type="checkbox" checked></label>
+            <label class="toggle-row"><span><strong>コンビニ払い</strong><small>申込後に支払い番号を発行</small></span><input type="checkbox"></label>
+          </section>
+          <section class="event-summary" aria-label="イベント内容"><p class="section-label">イベント内容</p><h3>CBO概論と実践ワーク</h3><ul><li>主催: 東京ブランディング大学校</li><li>内容: CBO思考、視座、全体の一貫性のコントロール</li><li>特典: 卒業生チャットグループ、東京ブランディング大学校1ヶ月無料</li><li>割引: 在校生・おかわり参加・ファシリテーター割 20,000円</li></ul></section>
+        </div>
+      </section>
+
+      <section class="phone-stage" aria-label="スマートフォンプレビュー">
+        <div class="phone"><div class="phone-status"><span>9:41</span><span>5G</span></div>
+          <article class="event-screen ticket-screen">
+            <div class="ticket-nav"><button type="button" aria-label="戻る">‹</button><button type="button" aria-label="メニュー">•••</button></div>
+            <div class="ticket-heading"><h2>My Ticket</h2><p id="previewStock">販売期限 5/27</p></div>
+            <section class="ticket-paper" aria-label="チケットプレビュー">
+              <div class="ticket-visual"><strong class="visual-title">CBO</strong><span class="visual-subtitle">Branding Course</span><div class="light-arc arc-one"></div><div class="light-arc arc-two"></div><div class="stage-person"></div></div>
+              <div class="ticket-info"><p class="category">Branding / Management</p><h3 id="previewTitle">【日本初】CBO育成コース（第17期）</h3><div class="seat-grid"><div><span>Venue</span><strong id="previewPlace">オンライン/都内</strong></div><div><span>Ticket</span><strong id="previewTicket">一般CBO</strong></div><div><span>Pay</span><strong id="previewPayment">PayPay</strong></div></div><div class="seat-grid compact"><div><span>Price</span><strong id="previewPrice">30,000円</strong></div><div><span>Date</span><strong id="previewDate">6/20・6/27 全9H</strong></div><div><span>Term</span><strong>17期</strong></div></div></div>
+              <div class="ticket-divider"></div><div class="barcode-area"><div class="barcode" aria-hidden="true"></div><p>X06138420082680826</p></div>
+            </section>
+            <div class="ticket-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span></div>
+            <div class="bottom-action"><button id="buyButton" type="button">PayPayで申し込む</button></div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="event-prototype.js"></script>
+  </body>
+</html>
